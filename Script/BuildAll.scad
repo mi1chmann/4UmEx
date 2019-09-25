@@ -9,7 +9,7 @@ rotate ([90,0,0])
         back();
         
 use <MyLeft.scad>;
- //translate ([/*+*/-WALL/2  WALL2, 0]) 
+
  color ("white",0.7)
  translate ([-WALL/2-INNER_SIZE[0]/2-WALL/2, 0, 0 ]) 
  rotate ([90,0,-90]) translate ([0,0,-6])linear_extrude (6) left();
@@ -21,7 +21,7 @@ translate ([+WALL/2+INNER_SIZE[0]/2-WALL/2,0 ])
 
 
 
-translate([-30.5,0,0])
+translate([-115.5 + 00,0,0])
 translate ([0,0, TOTAL_H/2-LEG_H -ZZ622R - 5 ])
 import("stl/UM Extended v4.stl");
 
