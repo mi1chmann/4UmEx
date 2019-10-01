@@ -60,7 +60,7 @@ tablemove = 17;
 //-165
 translate ([-TABLE_W/2,-TABLE_D/2+tablemove ,135])
 { 
-   translate ([0,0 ,25])
+   translate ([0,0 , 25])
     color("gray", 0.6) 
         linear_extrude (4) 
             table ();
@@ -105,6 +105,14 @@ color("red", 0.99)
     translate ([-INNER_SIZE[0]/2-WALL,-INNER_SIZE[1]/2-WALL,+TOTAL_H/2 - LEG_H ])
 linear_extrude (6)
 top();
+
+translate([0,147.7,216.00])
+rotate([90,0,0])
+color("white")
+import("stl/COVER ONE 2215-A v1.stl");
+
+
+
 // echo("VAL12",INNER_SIZE[2] + 2*WALL);
 
 //use <MK52-24V.scad>; translate ([0 ,0 , 175]) color ("gray",.9) MK52();
