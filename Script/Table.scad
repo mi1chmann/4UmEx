@@ -40,7 +40,7 @@ SUJENIE2 = 7;
 
 SUJENIE3 = 11;
 COVER_HOLSER_SIZE = 5;
-
+//table ();
 module table ()
 {
    
@@ -70,6 +70,8 @@ module table ()
         // bedholder
         translate ([T_HOLE_C_OFF + T_HOLE_R1,T_HOLE_C_OFF + T_HOLE_R1])
             circle (T_HOLE_R1);
+            
+            
         translate ([TABLE_W-(T_HOLE_R1+T_HOLE_C_OFF),T_HOLE_R1+T_HOLE_C_OFF])
             circle (T_HOLE_R1);
 

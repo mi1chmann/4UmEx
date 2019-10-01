@@ -29,10 +29,12 @@ function arearight(left, bottom, height) =
 
     ];
     
+//right();
+// translate ([0, 280]) square (270,true);
 
 module ship_vert_holes (center, bottom, height)
 {
-    echo ( "height / (WAll_SHIPS )/2" ,height / (WAll_SHIPS )/2 );
+    //echo ( "height / (WAll_SHIPS )/2" ,height / (WAll_SHIPS )/2 );
     
     for (ab = [0 : WAll_SHIPS-1])
         
@@ -67,7 +69,7 @@ module ship_vert_holes (center, bottom, height)
         
 }
 //right();
-echo (arearight (0,0,TOTAL_H - LEG_H));
+//echo (arearight (0,0,TOTAL_H - LEG_H));
 module right()
 
 {
@@ -78,6 +80,8 @@ module right()
     difference()
     {
         polygon ( arearight (0,0,TOTAL_H - LEG_H) );
+        
+        
         
     /*{    translate ([10+37.125,90])
         %square (32.125); 
@@ -90,8 +94,8 @@ module right()
     
         PFSH ((LEG_L_F+ WALL2), TOTAL_H - LEG_H, TOTAL_D_deep - 2*(LEG_L_F+ WALL2));
     
-        echo ("LEG_L_F+ WALL2", LEG_L_F+ WALL2);
-        echo ("TOTAL_D_deep - 2*(LEG_L_F+ WALL2)", TOTAL_D_deep - 2*(LEG_L_F+ WALL2));
+//        echo ("LEG_L_F+ WALL2", LEG_L_F+ WALL2);
+//        echo ("TOTAL_D_deep - 2*(LEG_L_F+ WALL2)", TOTAL_D_deep - 2*(LEG_L_F+ WALL2));
 
         ship_vert_holes (WALL2 + WALL/2, 0, TOTAL_H - LEG_H);
         
@@ -108,3 +112,5 @@ module right()
     }}
 
 }
+
+//left();

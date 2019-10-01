@@ -9,7 +9,7 @@ rotate ([90,0,0])
         back();
         
 use <MyLeft.scad>;
-
+ //translate ([/*+*/-WALL/2  WALL2, 0]) 
  color ("white",0.7)
  translate ([-WALL/2-INNER_SIZE[0]/2-WALL/2, 0, 0 ]) 
  rotate ([90,0,-90]) translate ([0,0,-6])linear_extrude (6) left();
@@ -21,7 +21,7 @@ translate ([+WALL/2+INNER_SIZE[0]/2-WALL/2,0 ])
 
 
 
-translate([-115.5 + 00,0,0])
+translate([-30.5,0,0])
 translate ([0,0, TOTAL_H/2-LEG_H -ZZ622R - 5 ])
 import("stl/UM Extended v4.stl");
 
@@ -85,7 +85,7 @@ translate ([-TABLE_W/2,-TABLE_D/2+tablemove ,135])
                     translate ([0,0,-91-25])
                     rotate([0,90,0])
                         {
-                            echo("VAL12",INNER_SIZE[2] + 2*WALL);
+                            //echo("VAL12",INNER_SIZE[2] + 2*WALL);
                             VAL12(INNER_SIZE[2] + 2*WALL);
                         }
                 }
@@ -105,4 +105,6 @@ color("red", 0.99)
     translate ([-INNER_SIZE[0]/2-WALL,-INNER_SIZE[1]/2-WALL,+TOTAL_H/2 - LEG_H ])
 linear_extrude (6)
 top();
- echo("VAL12",INNER_SIZE[2] + 2*WALL);
+// echo("VAL12",INNER_SIZE[2] + 2*WALL);
+
+//use <MK52-24V.scad>; translate ([0 ,0 , 175]) color ("gray",.9) MK52();
